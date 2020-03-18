@@ -14,7 +14,7 @@ namespace ConsumoAPi
             {
 
                 var url = "http://localhost:50788/api/TBL_EXCEPTIONS1";//ConfigurationManager.AppSettings["UrlApiExcepcion"]; 
-                var json = JsonConvert.SerializeObject(entitie);
+                var json = JsonConvert.SerializeObject();
                 var res = GetApiHttpPost(url, json);
             }
             catch (Exception ex)
